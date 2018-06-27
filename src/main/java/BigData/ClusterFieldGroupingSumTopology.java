@@ -29,6 +29,7 @@ public class ClusterFieldGroupingSumTopology {
          }
 
          public void nextTuple() {
+             int a ;
 
              collector.emit(new Values(number%2,++number));
              System.out.println("Spout: "+ number);
